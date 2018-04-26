@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <title>Sarah Elizabeth Mills</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav>
+
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s2">
+      <a href="home.html" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="about.html" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s2">
+      <a href="gallery.html" class="w3-button w3-block w3-black">GALLERY</a>
+    </div>
+  </nav>
+
+  <h1>Sarah Elizabeth Mills</h1>
+
+<header>
+<button onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Image Councellor, Instagrammer and lover of Long Haired Louts!, I am also partial to a pair of M&S Jeans!';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</header>
+
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+    background-color: #f8f6f2;
+    margin-left: 10px;
+    background-image: url("vs.png");
+    
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("header1.jpg");
+    min-height: 100%;
+}
+.menu {
+    display: none;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa {
+  padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+.fa-linkedin {
+  background: black;
+  color: white;
+}
+
+
+
+</body>
+</html>
